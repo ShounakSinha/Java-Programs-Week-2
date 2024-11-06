@@ -8,7 +8,7 @@ class Dog extends Animal {
     @Override
     public void eat() {
         super.eat(); // Calls the superclass (Animal's) eat method
-        System.out.println("The dog is eating dog food.");
+        System.out.println("The dog is eating dog food.");//what happens is both the eat of super class and the current eat is called
     }
 }
 
