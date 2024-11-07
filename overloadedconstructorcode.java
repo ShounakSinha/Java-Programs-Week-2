@@ -9,8 +9,11 @@ class derivedClass extends baseClass{
 }
 
 
-class overloadedconstructorcode{
-    //baseClass bC= new naseClass();
-    derivedClass dC= new derivedClass();
-    
+class overloadedconstructorcode {
+    public static void main(String args[]) {
+        // baseClass bC= new naseClass();
+        derivedClass dC = new derivedClass();
+        derivedClass dC2 = new derivedClass(5);
+
+    }
 }
