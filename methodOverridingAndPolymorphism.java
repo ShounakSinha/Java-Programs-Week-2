@@ -1,33 +1,32 @@
-class BankAccount {
+class BankAccnt {
     public void calculateInterest() {
         System.out.println("Calculating interest at base rate.");
     }
 }
 
-class SavingsAccount extends BankAccount {
+class SavingsAccount extends BankAccnt {
     @Override
     public void calculateInterest() {
         System.out.println("Calculating interest at savings account rate.");
     }
 }
 
-class CheckingAccount extends BankAccount {
+class CheckingAccount extends BankAccnt {
     @Override
     public void calculateInterest() {
         System.out.println("Calculating interest at checking account rate.");
     }
 }
 
-public class Main {
+public class MainforPolymorphism09112024 {
     public static void main(String[] args) {
-        //polymorphism implemented here
-        BankAccount baseAccount = new BankAccount();
-        BankAccount savings = new SavingsAccount();
-        BankAccount checking = new CheckingAccount();
+        // polymorphism implemented here
+        BankAccnt baseAccount = new BankAccnt();
+        BankAccnt savings = new SavingsAccount();
+        BankAccnt checking = new CheckingAccount();
 
         baseAccount.calculateInterest(); // Base rate interest
-        savings.calculateInterest();     // Savings rate interest
-        checking.calculateInterest();    // Checking rate interest
+        savings.calculateInterest(); // Savings rate interest
+        checking.calculateInterest(); // Checking rate interest
     }
 }
-
