@@ -20,6 +20,7 @@ class CheckingAccount extends BankAccount {
 
 public class Main {
     public static void main(String[] args) {
+        //polymorphism implemented here
         BankAccount baseAccount = new BankAccount();
         BankAccount savings = new SavingsAccount();
         BankAccount checking = new CheckingAccount();
