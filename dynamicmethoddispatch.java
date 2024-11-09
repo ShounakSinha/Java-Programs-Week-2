@@ -13,3 +13,15 @@ public class dynamicmethoddispatch {
 
         //this code snippet below is also a demonstration of dynamic method dispatch
 
+        A a = new A();
+        A b = new B();
+        A c = new C();
+        
+        a.callme();
+        b.callme();
+        c.callme();
+        
+    }
+    
+}
+
