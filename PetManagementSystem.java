@@ -85,5 +85,21 @@ class Cat extends Animal {
         System.out.println(getName() + " says: Meow Meow!");
     }
 
+    // Cat-specific behavior
+    public void purr() {
+        System.out.println(getName() + " is purring.");
+    }
+
+    // Getter and Setter for color
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+}
+
+
     
 
