@@ -37,5 +37,27 @@ abstract class Animal {
     }
 }
 
+// Dog subclass that extends Animal
+class Dog extends Animal {
+    // Additional property specific to Dog
+    private String breed;
 
+    // Constructor that uses super to call the superclass constructor
+    public Dog(String name, int age, String breed) {
+        super(name, age); // Calls the Animal constructor
+        this.breed = breed;
+    }
+
+    // Overridden sound method to provide Dog-specific behavior
+    @Override
+    public void sound() {
+        System.out.println(getName() + " says: Woof Woof!");
+    }
+
+    // Dog-specific behavior
+    public void bark() {
+        System.out.println(getName() + " is barking.");
+    }
+
+    
 
