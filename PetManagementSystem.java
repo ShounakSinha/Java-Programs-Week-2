@@ -59,5 +59,31 @@ class Dog extends Animal {
         System.out.println(getName() + " is barking.");
     }
 
+    // Getter and Setter for breed
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+}
+
+// Cat subclass that extends Animal
+class Cat extends Animal {
+    private String color;
+
+    // Constructor for Cat
+    public Cat(String name, int age, String color) {
+        super(name, age); // Calls the Animal constructor
+        this.color = color;
+    }
+
+    // Overridden sound method to provide Cat-specific behavior
+    @Override
+    public void sound() {
+        System.out.println(getName() + " says: Meow Meow!");
+    }
+
     
 
