@@ -19,3 +19,23 @@ abstract class Animal {
         this.name = name;
     }
 
+    // Getter and Setter for age
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // Abstract method to be implemented by subclasses
+    public abstract void sound();
+
+    // A general method for animals that can be overridden
+    public void eat() {
+        System.out.println(name + " is eating.");
+    }
+}
+
+
+
