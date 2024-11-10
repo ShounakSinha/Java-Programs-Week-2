@@ -101,5 +101,45 @@ class Cat extends Animal {
 }
 
 
+// Main class to manage pets and demonstrate polymorphism
+public class PetManagementSystem {
+    public static void main(String[] args) {
+        // Creating instances of Dog and Cat using polymorphism
+        Animal pet1 = new Dog("Buddy", 3, "Golden Retriever");
+        Animal pet2 = new Cat("Whiskers", 2, "Gray");
+
+        // Displaying pet information and sounds
+        displayPetInfo(pet1);
+        displayPetInfo(pet2);
+
+        // Demonstrating the use of subclass-specific methods with casting
+        if (pet1 instanceof Dog) {
+            ((Dog) pet1).bark(); // Casting pet1 to Dog type
+        }
+
+        if (pet2 instanceof Cat) {
+            ((Cat) pet2).purr(); // Casting pet2 to Cat type
+        }
+
+        // Using getter and setter methods
+        pet1.setAge(4); // Changing age using setter
+        System.out.println("Updated age of " + pet1.getName() + ": " + pet1.getAge());
+
+        // Using the eat method to show inheritance and method overriding
+        pet1.eat(); // Calls Animal's eat() method
+        pet2.eat(); // Calls Animal's eat() method
+    }
+
+    // A method to display pet information using polymorphism
+    public static void displayPetInfo(Animal animal) {
+        System.out.println("Pet Info:");
+        System.out.println("Name: " + animal.getName());
+        System.out.println("Age: " + animal.getAge());
+        animal.sound(); // Polymorphic call
+    }
+}
+
+
+
     
 
